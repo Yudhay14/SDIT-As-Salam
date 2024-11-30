@@ -150,13 +150,19 @@ body{
 
 .container-hero-visi {
     height: 500px;
-    padding-bottom:  40rem;
+    padding-bottom:  46rem;
     padding-top: 32px;
+    background-image: url(img/bg-landing.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .container-hero-visi .container-item-visimisi img{
     width: 600px;
     
+}
+.container-hero-visi .container-item-visimisi{
+    padding-top: 128px;
 }
 /* modals */
 @media (max-width: 991px) {
@@ -167,10 +173,18 @@ body{
         
     }  
     .container-hero-visi {
-        height: 500px;
-        padding-bottom:  75rem;
+        height: 400px;
+        padding-bottom: 79rem;
+        background-size: contain;
     }
 
+    .container-hero-visi .container-item-visimisi img{
+        width: 27rem;
+        
+    }
+    .container-hero-visi .container-item-visimisi{
+        padding-top: 0px;
+    }
     .container-hero-visi .container-item-visimisi img{
         width: 100%;
         
@@ -195,11 +209,20 @@ body{
     .location{
         margin-top: 28rem;
     }
+
     .container-hero-visi {
-        height: 500px;
-        padding-bottom:  75rem;
+        height: 400px;
+        padding-bottom: 65rem;
+        background-size: contain;
     }
 
+    .container-hero-visi .container-item-visimisi img{
+        width: 27rem;
+        
+    }
+    .container-hero-visi .container-item-visimisi{
+        padding-top: 0px;
+    }
     .container-hero-visi .container-item-visimisi img{
         width: 100%;
         
@@ -239,13 +262,17 @@ body{
 
 @media (max-width:576px) {
     .container-hero-visi {
-        height: 500px;
-        padding-bottom:  60rem;
+        height: 400px;
+        padding-bottom: 65rem;
+        background-size: contain;
     }
 
     .container-hero-visi .container-item-visimisi img{
         width: 27rem;
         
+    }
+    .container-hero-visi .container-item-visimisi{
+        padding-top: 0px;
     }
     .container-hero{
         background-image: url(img/bg-landing.jpg);
@@ -302,10 +329,19 @@ body{
     }
 
     .container-hero-visi {
-        height: 500px;
-        padding-bottom: 45rem;
+        height: 400px;
+        padding-bottom: 50rem;
+        background-size: contain;
     }
-
+    .container-hero-visi .container-item-visimisi h1{
+        font-size: 20px;
+    }
+    .container-hero-visi .container-item-visimisi p{
+        font-size: 13px;
+    }
+    .container-hero-visi .container-item-visimisi{
+        padding-top: 0px;
+    }
     .container-hero-visi .container-item-visimisi img{
         width: 19rem;
         
