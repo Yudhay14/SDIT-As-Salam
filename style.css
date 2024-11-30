@@ -1,0 +1,264 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: "Poppins", sans-serif;
+    overflow-x: hidden;
+    background-color: #E3FCF4;
+}
+
+.bordered{
+    border: solid black;
+}
+
+#contact{
+    background-color: rgb(15, 90, 240);
+    color: white;
+    padding: 5px 15px;
+    border-radius: 30px;
+    font-weight: 500;
+    border: none;
+}
+
+#contact:hover{
+    background-color: #fff;
+    color: #0f5af0;
+    border: solid #0f5af0;
+    transition: ease-in-out 0.5s;
+
+}
+.hero{
+    display: flex;
+    align-items: center;
+    height: 600px;
+}
+
+.container-hero{
+    background-image: url(img/bg-landing.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.container-hero2{
+    background-image: url(img/bg-landing3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.container-tag{
+    background-image: url(img/bg-landing2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+}
+.container-tag .tagline .container .row .col h1{
+    padding-bottom: 64px;
+}
+
+.card{
+    box-shadow: 2px 2px 6px black;
+    border: none;
+    border-radius: 20px;
+    justify-content: center;
+    text-align: center;
+    justify-content: center;
+    column-gap: 64px;
+    margin-bottom: 32px;
+}
+.card h5{
+    font-weight: 700;
+    margin-bottom: 16px;
+    color: chocolate;
+}
+.card-xtra .row{
+    display: flex;
+    justify-content: center;
+    row-gap: 32px;
+}
+.card-xtra .row .col .card-body{
+    border-radius: 30px;
+   
+}
+.card-xtra-item img{
+    border-radius: 20px;
+}
+.section2 h4{
+    margin-bottom: 64px;
+    font-weight: 700;
+    background-color: rgba(255, 228, 118, 0.5);
+    border-radius: 30px;
+}
+
+.location{
+    margin-bottom: 64px;
+}
+.location h4{
+    margin-top: 32px;
+    font-weight: 700;
+    background-color: rgba(255, 228, 118, 0.5);
+    border-radius: 30px;
+}
+.location .row{
+    margin-top: 64px;
+}
+
+.location .row .col h3{
+    font-size: 19px;
+    text-align: center;
+    margin-bottom: 32px;
+    font-weight: 600;
+}
+.location .row .col form label{
+    font-weight: 600;
+}
+.footer .footer-item{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.footer{
+    background-color: #b0b0b0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer .footer-item .footer-detail p{
+    font-size: 14px;
+}
+.footer .footer-item .footer-detail h5{
+    font-size: 14px;
+    font-weight: 700;
+}
+.kontak h5{
+    font-weight: 600;
+}
+
+.kontak p{
+    font-size: 14px;
+}
+
+#footer-xtra p{
+    font-size: 14px;
+}
+.footer .footer-detail-1 p:hover{
+    cursor: pointer;
+    font-weight: 600;
+}
+.footer .footer-detail-2 p:hover{
+    cursor: pointer;
+    font-weight: 600;
+}
+/* modals */
+@media (max-width: 991px) {
+    .hero{
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
+        
+    }  
+    .container-tag .tagline{
+        margin-top: 10rem;
+    }
+
+}
+
+@media (max-width:1200px){
+    .location{
+        margin-top: 16rem;
+    }
+
+    iframe{
+        width: 100%;
+        text-align: center;
+    }
+}
+@media (max-width:890px){
+    .location{
+        margin-top: 28rem;
+    }
+    iframe{
+        width: 100%;
+        text-align: center;
+    }
+    .container-tag .tagline{
+        margin-top: 10rem;
+    }
+
+}
+
+@media (max-width:768px){
+    .location{
+        margin-top: 50rem;
+    }
+
+    iframe{
+        width: 100%;
+        text-align: center;
+    }
+
+    .container-tag .tagline{
+        margin-top: 10rem;
+    }
+}
+
+@media (max-width:576px) {
+
+    .container-hero{
+        background-image: url(img/bg-landing.jpg);
+        background-repeat: no-repeat;
+        background-size: contain;
+        height: 700px;
+    }
+    .container-her2{
+        background-size: contain;
+    }
+    .container-tag .tagline{
+        margin-top: 1rem;
+    }
+    .card-xtra .row{
+        margin: 5px;
+    }
+    iframe{
+        width: 100%;
+        text-align: center;
+    }
+    .location{
+        margin-top: 20rem;
+    }
+    .footer .footer-item .footer-detail p{
+        font-size: 14px;
+    }
+    .footer .footer-item .footer-detail h5{
+        font-size: 14px;
+        font-weight: 700;
+    }
+    .footer .footer-detail{
+        background-color: #8080814d;
+    }
+    .footer{
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+            
+    }   
+    .footer .footer-detail-1 , .footer-detail-2{
+        display: none;
+    }
+    .footer .footer-item .kontak h5{
+        text-align: left;
+    }
+    #footer-xtra p{
+        font-size: 12px;
+    }
+}
+
+@media (max-width:480px){
+    .location{
+        margin-top: 1rem;
+    }
+    iframe{
+        width: 100%;
+        text-align: center;
+    }
+
+}
