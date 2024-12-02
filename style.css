@@ -19,11 +19,13 @@ body{
     font-weight: 500;
     border: none;
 }
-
 #contact:hover{
     background-color: #fff;
     color: #0f5af0;
     border: 1px solid #0f5af0;
+    transition: ease-in-out 0.9s;
+    cursor: pointer;
+    transform: scale(1.1);
 
 }
 .hero{
@@ -52,6 +54,23 @@ body{
     padding-bottom: 64px;
 }
 
+
+/* xtra */
+#Xtra-more{
+    background-color: rgb(15, 90, 240);
+    color: white;
+    padding: 5px 15px;
+    border-radius: 30px;
+    font-weight: 500;
+    border: none;
+}
+#Xtra-more:hover{
+    background-color: #fff;
+    color: #0f5af0;
+    border: 1px solid #0f5af0;
+    transition: ease-in-out 0.9s;
+    cursor: pointer;
+}
 .card{
     box-shadow: 2px 2px 6px black;
     border: none;
@@ -164,6 +183,34 @@ body{
 .container-hero-visi .container-item-visimisi{
     padding-top: 128px;
 }
+
+
+/* pages about */
+.container-about{
+    background-image: url(img/bg-test.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 700px;
+}
+.container-about .row .col img{
+    width: 600px;
+    border-radius: 30px;
+    box-shadow: 0px 0px 5px black;
+}
+.container-about .row .col {
+    padding-top: 128px;
+}
+.container-about .row .col h6{
+    display: inline-block;
+    background-color: orange;
+    padding: 5px;
+    font-weight: 500;
+    color: #fff;
+}
+.container-about .row .col p{
+    font-weight: 600;
+}
+/* end pages about */
 /* modals */
 @media (max-width: 991px) {
     .hero{
@@ -192,6 +239,24 @@ body{
     .container-tag .tagline{
         margin-top: 10rem;
     }
+            /* pages about*/
+            .container-about .row .col img{
+                width: 100%;
+                border-radius: 30px;
+                box-shadow: 0px 0px 5px black;
+                
+            }
+            .container-about .row .col {
+                padding-top: 32px;
+            }
+            .container-about .row {
+                padding: 32px 9%;
+                display: flex;
+                flex-direction: column;
+            }
+            .container-about{
+                padding-bottom: 55rem;
+            }
 
 }
 
@@ -234,6 +299,24 @@ body{
     .container-tag .tagline{
         margin-top: 10rem;
     }
+        /* pages about*/
+        .container-about .row .col img{
+            width: 100%;
+            border-radius: 30px;
+            box-shadow: 0px 0px 5px black;
+            
+        }
+        .container-about .row .col {
+            padding-top: 32px;
+        }
+        .container-about .row {
+            padding: 32px 9%;
+            display: flex;
+            flex-direction: column;
+        }
+        .container-about{
+            padding-bottom: 20rem;
+        }
 
 }
 
@@ -257,6 +340,24 @@ body{
 
     .container-tag .tagline{
         margin-top: 10rem;
+    }
+    /* pages about*/
+    .container-about .row .col img{
+        width: 100%;
+        border-radius: 30px;
+        box-shadow: 0px 0px 5px black;
+        
+    }
+    .container-about .row .col {
+        padding-top: 32px;
+    }
+    .container-about .row {
+        padding: 32px 9%;
+        display: flex;
+        flex-direction: column;
+    }
+    .container-about{
+        padding-bottom: 10rem;
     }
 }
 
@@ -321,6 +422,24 @@ body{
     #footer-xtra p{
         font-size: 12px;
     }
+    /* pages about */
+    .container-about .row .col img{
+        width: 100%;
+        border-radius: 30px;
+        box-shadow: 0px 0px 5px black;
+        
+    }
+    .container-about .row .col {
+        padding-top: 32px;
+    }
+    .container-about .row {
+        padding: 32px 9%;
+        display: flex;
+        flex-direction: column;
+    }
+    .container-about{
+        padding-bottom: 50rem;
+    }
 }
 
 @media (max-width:480px){
@@ -350,5 +469,24 @@ body{
         width: 100%;
         text-align: center;
     }
+    /* media about */
+    .container-about .row .col img{
+        width: 100%;
+        border-radius: 30px;
+        box-shadow: 0px 0px 5px black;
+        
+    }
+    .container-about .row .col {
+        padding-top: 32px;
+    }
+    .container-about .row {
+        padding: 32px 9%;
+        display: flex;
+        flex-direction: column;
+    }
+    .container-about{
+        padding-bottom: 50rem;
+    }
+    /* media about end */
 
 }
