@@ -28,6 +28,28 @@ body{
     transform: scale(1.1);
 
 }
+.btn-ham{
+    display: none;
+}
+
+.offcanvas{
+    color: #0f5af0;
+    background-color:rgba(187, 222, 255, 0.7);
+    width: 300px;
+}
+#offcanvasRightLabel{
+    font-size: 16px;
+    padding-top: 7px;
+    font-weight: 700;
+    color: #2f2f2f;
+    font-style: italic;
+    border-bottom: solid #0f5af0;
+}
+.off-menu{
+    font-size: 12px;
+    padding: 0px -7px;
+}
+/* hero */
 .hero{
     display: flex;
     align-items: center;
@@ -187,7 +209,8 @@ body{
 
 /* pages about */
 .container-about{
-    background-image: url(img/bg-test.jpg);
+    background-image: url(img/guru.jpg);
+    opacity: 60%;
     background-repeat: no-repeat;
     background-size: cover;
     height: 700px;
@@ -270,6 +293,13 @@ body{
         text-align: center;
     }
 }
+
+@media (max-width:991px){
+    .btn-ham{
+        display: block;
+    }
+}
+
 @media (max-width:890px){
     .location{
         margin-top: 28rem;
@@ -321,6 +351,10 @@ body{
 }
 
 @media (max-width:768px){
+
+    .offcanvas{
+        width: 230px;
+    }
     .location{
         margin-top: 50rem;
     }
@@ -362,6 +396,7 @@ body{
 }
 
 @media (max-width:576px) {
+
     .container-hero-visi {
         height: 400px;
         padding-bottom: 65rem;

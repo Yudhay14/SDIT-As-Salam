@@ -21,11 +21,69 @@
   <nav class="navbar navbar-expand-lg navbar-light shadow-sm sticky-top" style="background-color: #bbdeff;">
     <div class="container">
       <a class="navbar-brand fw-bold fst-italic" href="#">
-        <img src="img/LogoNav.PNG" alt="logo" width="35">As- Salam
+        <img src="img/LogoNav.PNG" alt="logo" width="35"> As- Salam
       </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
+      <button class="btn btn-ham" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><span class="navbar-toggler-icon"></span></button>
+      
+      <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+          <div class="offcanvas-header">
+          <h5 id="offcanvasRightLabel">SDIT As-Salam</h5>
+          <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav ms-auto" style="font-size: 14px;">
+              <li class="nav-item mx-2">
+                  <a class="nav-link active fw-bold" aria-current="page" href="index.html">Home</a>
+              </li>
+              <li class="nav-item dropdown mx-2">
+                <a class="nav-link dropdown-toggle fw-bold" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Tentang Kami
+                </a>
+                <ul class="dropdown-menu off-menu" aria-labelledby="navbarDropdownMenuLink">
+                    <li><a class="dropdown-item" href="visi.html">Visi Misi</a></li>
+                    <li><a class="dropdown-item" href="#">Sejarah SDIT As-Salam IGS</a></li>
+                    <li><a class="dropdown-item" href="#">Struktur Organisasi</a></li>
+                    <li><a class="dropdown-item" href="#">Standar Kompetensi</a></li>
+                </ul>
+            </li>
+            <li class="nav-item dropdown mx-2">
+                <a class="nav-link dropdown-toggle fw-bold" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Pendidikan
+                </a>
+                <ul class="dropdown-menu off-menu" aria-labelledby="navbarDropdownMenuLink">
+                    <li><a class="dropdown-item" href="#">Kurikulum SDIT</a></li>
+                    <li><a class="dropdown-item" href="#">Kalender Pendidikan</a></li>
+                    <li><a class="dropdown-item" href="#">Pengajar dan Tenaga<br>Pendidik</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown mx-2">
+                <a class="nav-link dropdown-toggle fw-bold" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Kegiatan
+                </a>
+                <ul class="dropdown-menu off-menu" aria-labelledby="navbarDropdownMenuLink">
+                    <li><a class="dropdown-item" href="#">Ekstrakulikuler</a></li>
+                    <li><a class="dropdown-item" href="#">Tajum <br>(Kegiatan Jum'at)</a></li>
+                    <li><a class="dropdown-item" href="#">Keagama'an</a></li>
+                </ul>
+              </li>
+              <li class="nav-item mx-2">
+                <a class="nav-link fw-bold" href="#" id="navbarDropdownMenuLink" role="button" aria-expanded="false">
+                Prestasi
+                </a>
+              </li>
+              <li class="nav-item mx-2">
+                <a class="nav-link fw-bold" href="#" id="navbarDropdownMenuLink" role="button" aria-expanded="false">
+                Artikel Terbaru
+                </a>
+              </li>
+              <li class="nav-item mx-2">
+                <a class="nav-link fw-bold" href="#" id="navbarDropdownMenuLink" role="button" aria-expanded="false">
+                Info PPDB
+                </a>
+              </li>
+          </ul>
+          </div>
+    </div>
       <div class="collapse navbar-collapse" id="navbarNavDropdown">
         <ul class="navbar-nav ms-auto" style="font-size: 14px;">
             <li class="nav-item mx-2">
@@ -33,25 +91,49 @@
             </li>
             <li class="nav-item dropdown mx-2">
               <a class="nav-link dropdown-toggle fw-bold" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                Profil
+                Tentang Kami
               </a>
-              <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                  <li><a class="dropdown-item" href="visi.html">Visi</a></li>
-                  <li><a class="dropdown-item" href="About.html">Tentang Kami</a></li>
+              <ul class="dropdown-menu off-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <li><a class="dropdown-item" href="visi.html">Visi Misi</a></li>
+                  <li><a class="dropdown-item" href="#">Sejarah SDIT As-Salam IGS</a></li>
+                  <li><a class="dropdown-item" href="#">Struktur Organisasi</a></li>
+                  <li><a class="dropdown-item" href="#">Standar Kompetensi</a></li>
               </ul>
           </li>
-            <li class="nav-item mx-2">
-                <a class="nav-link fw-bold" href="#">Fasilitas</a>
+          <li class="nav-item dropdown mx-2">
+              <a class="nav-link dropdown-toggle fw-bold" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Pendidikan
+              </a>
+              <ul class="dropdown-menu off-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <li><a class="dropdown-item" href="#">Kurikulum SDIT</a></li>
+                  <li><a class="dropdown-item" href="#">Kalender Pendidikan</a></li>
+                  <li><a class="dropdown-item" href="#">Pengajar dan Tenaga<br>Pendidik</a></li>
+              </ul>
             </li>
             <li class="nav-item dropdown mx-2">
-                <a class="nav-link dropdown-toggle fw-bold" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Selengkapnya
-                </a>
-                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                    <li><a class="dropdown-item" href="#">Pendaftaran PPDB Online</a></li>
-                    <li><a class="dropdown-item" href="#">Xtra Kulikuler</a></li>
-                    <li><a class="dropdown-item" href="#">Kegiatan</a></li>
-                </ul>
+              <a class="nav-link dropdown-toggle fw-bold" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Kegiatan
+              </a>
+              <ul class="dropdown-menu off-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <li><a class="dropdown-item" href="#">Ekstrakulikuler</a></li>
+                  <li><a class="dropdown-item" href="#">Tajum <br>(Kegiatan Jum'at)</a></li>
+                  <li><a class="dropdown-item" href="#">Keagama'an</a></li>
+              </ul>
+            </li>
+            <li class="nav-item mx-2">
+              <a class="nav-link fw-bold" href="#" id="navbarDropdownMenuLink" role="button" aria-expanded="false">
+              Prestasi
+              </a>
+            </li>
+            <li class="nav-item mx-2">
+              <a class="nav-link fw-bold" href="#" id="navbarDropdownMenuLink" role="button" aria-expanded="false">
+              Artikel Terbaru
+              </a>
+            </li>
+            <li class="nav-item mx-2">
+              <a class="nav-link fw-bold" href="#" id="navbarDropdownMenuLink" role="button" aria-expanded="false">
+              Info PPDB
+              </a>
             </li>
         </ul>
       </div>
@@ -121,6 +203,22 @@
       </div>
     </section>
   </section>
+   
+  <section class="container-fluid container-about mb-5">
+    <div class="row" data-aos="fade-down" data-aos-delay="200" data-aos-duration="1000">
+            <div class="col col-sm-12 col-lg-5 offset-0">
+                <h6>About Us</h6>
+                <h2 class="fw-bold">Welcome To</h2>
+                <h2 class="fw-bold">Our <span class="text-primary">SDIT As-Salam,</span></h2>
+                <br>
+                <p>SELAYANG PANDANG</p>
+                <P>SDIT As-Salam Islamic Green School Klapanunggal, adalah sekolah bermanhaj Ahlus Sunnah Wal Jama'ah yang berkarakter Qur'ani yang menggunakan Kurikulum Nasional sebagai kurikulum pembelajaran, dan Program Tahfidz Qur'an yang dirancang khusus untuk peserta ddik.</P>
+            </div>
+            <div class="col col-sm-12 col-lg-5 offset">
+                <img src="img/landing.jpg" alt="landing">
+            </div>
+    </div>
+</section>
   <!-- hero section end-->
   <!-- section 2  -->
    <section class="container-hero2">
