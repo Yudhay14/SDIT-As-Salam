@@ -209,11 +209,23 @@ body{
 
 /* pages about */
 .container-about{
+    position: relative;
+    height: 600px;
+    overflow: hidden;
+}
+
+.container-about::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
     background-image: url(img/guru.jpg);
-    opacity: 60%;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 700px;
+    opacity: 0.5; /* Atur nilai opacity sesuai kebutuhan */
+    z-index: -1; /* Pastikan pseudo-element berada di belakang konten */
 }
 .container-about .row .col img{
     width: 600px;
