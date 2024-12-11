@@ -23,9 +23,8 @@ body{
     background-color: #fff;
     color: #0f5af0;
     border: 1px solid #0f5af0;
-    transition: ease-in-out 0.9s;
+    transition: 0.2s linear;
     cursor: pointer;
-    transform: scale(1.1);
 
 }
 .btn-ham{
@@ -34,7 +33,7 @@ body{
 
 .offcanvas{
     color: #0f5af0;
-    background-color:rgba(187, 222, 255, 0.7);
+    background-color:rgba(187, 222, 255, 0.9);
     width: 300px;
 }
 #offcanvasRightLabel{
@@ -43,11 +42,31 @@ body{
     font-weight: 700;
     color: #2f2f2f;
     font-style: italic;
-    border-bottom: solid #0f5af0;
 }
 .off-menu{
-    font-size: 12px;
+    font-size: 13px;
     padding: 0px -7px;
+}
+.dropdown-menu{
+    background-color:#8db1f8;
+    border: none;
+}
+
+.nav-item{
+    position: relative;
+    padding-bottom: 10px;
+}
+
+.nav-item::after{
+    content: '';
+    display: block;
+    border-bottom: 2px solid #0f5af0;
+    transform: scaleX(0);
+    transform-origin: 0 0;
+    transition: 0.4s linear;
+}
+.nav-item:hover:after{
+    transform: scaleX(0.4)
 }
 /* hero */
 .hero{
@@ -210,7 +229,7 @@ body{
 /* pages about */
 .container-about{
     position: relative;
-    height: 600px;
+    height: 650px;
     overflow: hidden;
 }
 
@@ -230,10 +249,12 @@ body{
 .container-about .row .col img{
     width: 600px;
     border-radius: 30px;
+    margin-top: 64px;
     box-shadow: 0px 0px 5px black;
+    align-items: center;
 }
 .container-about .row .col {
-    padding-top: 128px;
+    padding-top: 84px;
 }
 .container-about .row .col h6{
     display: inline-block;
@@ -363,7 +384,7 @@ body{
 }
 
 @media (max-width:768px){
-
+    
     .offcanvas{
         width: 230px;
     }
@@ -408,7 +429,20 @@ body{
 }
 
 @media (max-width:576px) {
-
+    .container-about::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: url(img/guru.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        opacity: 0.5; /* Atur nilai opacity sesuai kebutuhan */
+        z-index: -1; /* Pastikan pseudo-element berada di belakang konten */
+    }
     .container-hero-visi {
         height: 400px;
         padding-bottom: 65rem;
@@ -489,11 +523,13 @@ body{
     }
 }
 
+/* sejarah */
+
 @media (max-width:480px){
     .location{
         margin-top: 1rem;
     }
-
+    
     .container-hero-visi {
         height: 400px;
         padding-bottom: 50rem;
