@@ -36,6 +36,11 @@ body{
     background-color:rgba(187, 222, 255, 0.92);
     width: 300px;
 }
+.offcanvas-header .btn-close{
+    font-size: 20px;
+    padding: 10px 32px;
+    
+}
 #offcanvasRightLabel{
     font-size: 16px;
     padding-top: 7px;
@@ -450,7 +455,7 @@ body{
 @media (max-width:768px){
     
     .offcanvas{
-        width: 350px;
+        width: 300px;
     }
     .location{
         margin-top: 50rem;
